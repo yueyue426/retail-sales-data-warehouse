@@ -13,7 +13,7 @@ JOIN DimProduct p
 ON f.Productid = p.Productid
 GROUP BY GROUPING SETS (
     (p.Productid, p.Producttype),
-    p.Product_id,
+    p.Productid,
     p.Producttype,
     ()
 )
@@ -67,4 +67,4 @@ WITH DATA;
 -- If want to create the view without filling it with data, use WITH NO DATA.
 
 -- Update the materialized view with the latest data
-REFRESH MATERIALIZED VIEW max_sales;
+--REFRESH MATERIALIZED VIEW max_sales;
