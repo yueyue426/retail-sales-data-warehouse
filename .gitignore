@@ -58,4 +58,4 @@ config.json
 # Ignore quality check results / temporary files
 quality_checks/__pycache__/
 *.out
-*.tmp
+*.tmpdbconnect.py
